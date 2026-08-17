@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PyCon WA 2027: Wa, Upper West Region, Ghana</title>
+        <title>PyCon Wa 2027: Wa, Upper West Region, Ghana</title>
         <meta
             name="description"
-            content="PyCon WA, the first tech conference in Ghana's Upper West Region. Free to attend. Held in Wa."
+            content="PyCon Wa, the first tech conference in Ghana's Upper West Region. Free to attend. Held in Wa."
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -255,9 +255,9 @@
 
         <div id="speakers-include"></div>
 
-        <div class="weave"></div>
+        <div class="weave" style="display: none"></div>
 
-        <section class="light" id="register">
+        <section class="light" id="register" style="display: none">
             <div class="wrap">
                 <div class="register-grid">
                     <div class="register-side reveal">
@@ -429,9 +429,9 @@
 
         <div id="sponsors-include"></div>
 
-        <div class="weave"></div>
+        <!--<div class="weave"></div>-->
 
-        <section class="light" id="venue">
+        <!--<section class="light" id="venue">
             <div class="wrap">
                 <div class="section-head reveal">
                     <div class="eyebrow">Venue & getting to Wa</div>
@@ -473,7 +473,7 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <div class="weave"></div>
 
@@ -580,25 +580,23 @@
                                 <li>
                                     <a href="#sponsors">Become a sponsor</a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="https://github.com/"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Site source on GitHub</a
-                                    >
-                                </li>
                             </ul>
                         </div>
                         <div class="footer-col">
                             <h5>Elsewhere</h5>
                             <ul>
                                 <li><a href="#">Twitter / X</a></li>
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">LinkedIn</a></li>
                                 <li>
-                                    <a href="mailto:hello@pyconwa.org"
-                                        >hello@pyconwa.org</a
+                                    <a
+                                        href="https://www.linkedin.com/company/python-wa/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >LinkedIn</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="wa@pythonghana.org"
+                                        >wa@pythonghana.org</a
                                     >
                                 </li>
                             </ul>
@@ -626,7 +624,11 @@
                             One email when the CFP opens and when the schedule
                             is confirmed. Nothing else.
                         </p>
-                        <form id="newsletterForm">
+                        <form
+                            id="newsletterForm"
+                            action="https://formspree.io/f/moeakpvr"
+                            method="post"
+                        >
                             <input
                                 type="email"
                                 placeholder="you@example.com"
@@ -638,7 +640,7 @@
                 </div>
                 <div class="footer-bottom">
                     <span
-                        >PyCon WA, organized independently by community
+                        >PyCon Wa, organized independently by community
                         volunteers in Wa, Upper West Region. Not an official PSF
                         or Python Software Foundation site.</span
                     >
