@@ -82,12 +82,7 @@ nav{
   display:flex; align-items:center; justify-content:space-between;
 }
 .brand{display:flex; align-items:center; gap:11px; text-decoration:none;}
-.brand-mark{display:flex; gap:3px; align-items:flex-end; height:22px;}
-.brand-mark span{width:4px; display:block; border-radius:1px;}
-.brand-mark span:nth-child(1){height:22px; background:var(--gold);}
-.brand-mark span:nth-child(2){height:14px; background:var(--rust);}
-.brand-mark span:nth-child(3){height:19px; background:var(--teal);}
-.brand-mark span:nth-child(4){height:10px; background:var(--indigo);}
+.brand-img{height:32px; width:auto; border-radius:2px;}
 .brand-word{font-family:var(--display); font-weight:700; font-size:19px; color:var(--paper);}
 .brand-word em{font-style:normal; color:var(--gold);}
 

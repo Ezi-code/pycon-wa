@@ -1,414 +1,652 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PyCon WA 2027 — Wa, Upper West Region, Ghana</title>
-<meta name="description" content="PyCon WA — the first tech conference in Ghana's Upper West Region. Free to attend. Held in Wa.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="static/css/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PyCon WA 2027: Wa, Upper West Region, Ghana</title>
+        <meta
+            name="description"
+            content="PyCon WA, the first tech conference in Ghana's Upper West Region. Free to attend. Held in Wa."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="static/css/styles.css" />
+    </head>
+    <body>
+        <header class="site">
+            <nav>
+                <a href="#" class="brand">
+                    <img
+                        src="static/images/pythonwa.avif"
+                        alt="PyCon Wa logo"
+                        class="brand-img"
+                    />
+                    <span class="brand-word">Py<em>Con</em> Wa</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why-wa">Why Wa</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#speak">Speak</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <a href="#register" class="nav-cta">Register free</a>
+                <button
+                    class="nav-toggle"
+                    id="navToggle"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
 
-<header class="site">
-  <nav>
-    <a href="#" class="brand">
-      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
-      <span class="brand-word">Py<em>Con</em> WA</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#why-wa">Why Wa</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#speak">Speak</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-    <a href="#register" class="nav-cta">Register free</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
-  </nav>
-</header>
+        <section class="hero dark">
+            <div class="wrap">
+                <div class="hero-kicker eyebrow">
+                    Wa, Upper West Region, Ghana · Dates TBA
+                    <span class="free-badge">Free to attend</span>
+                </div>
+                <h1>
+                    The tech map of Ghana <span class="accent">has a gap.</span
+                    ><br />We're closing it.
+                </h1>
+                <p class="hero-sub">
+                    Every major Ghanaian tech gathering happens in Accra or
+                    Kumasi. The Upper West Region, home to over 800,000 people,
+                    has never hosted one. PyCon Wa is the first, held in the
+                    region's capital, Wa: three days of talks and hands-on
+                    Python, completely free, built to put the north on the map
+                    for the companies, investors, and opportunities that keep
+                    passing it by.
+                </p>
+                <div class="hero-actions">
+                    <a href="#register" class="btn btn-primary"
+                        >Register, it's free →</a
+                    >
+                    <a href="#speak" class="btn btn-ghost">Propose a talk</a>
+                </div>
+                <div class="hero-meta">
+                    <div>Location <strong>Wa, Upper West Region</strong></div>
+                    <div>Cost <strong>Free, meals included</strong></div>
+                    <div>Format <strong>In-person + streamed</strong></div>
+                    <div>Status <strong>First of its kind, here</strong></div>
+                </div>
+            </div>
+        </section>
 
-<section class="hero dark">
-  <div class="wrap">
-    <div class="hero-kicker eyebrow">Wa, Upper West Region, Ghana · Dates TBA <span class="free-badge">Free to attend</span></div>
-    <h1>The tech map of Ghana <span class="accent">has a gap.</span><br>We're closing it.</h1>
-    <p class="hero-sub">Every major Ghanaian tech gathering happens in Accra or Kumasi. The Upper West Region — home to over 800,000 people — has never hosted one. PyCon WA is the first, held in the region's capital, Wa: three days of talks and hands-on Python, completely free, built to put the north on the map for the companies, investors, and opportunities that keep passing it by.</p>
-    <div class="hero-actions">
-      <a href="#register" class="btn btn-primary">Register — it's free →</a>
-      <a href="#speak" class="btn btn-ghost">Propose a talk</a>
-    </div>
-    <div class="hero-meta">
-      <div>Location <strong>Wa, Upper West Region</strong></div>
-      <div>Cost <strong>Free, meals included</strong></div>
-      <div>Format <strong>In-person + streamed</strong></div>
-      <div>Status <strong>First of its kind, here</strong></div>
-    </div>
-  </div>
-</section>
+        <div class="weave"></div>
 
-<div class="weave"></div>
-
-<section class="light" id="about">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The theme</div>
-      <h2>Put Wa on the map.</h2>
-      <p>PyCon WA is built around one idea: a region shouldn't have to move to the capital to reach the tech industry — the tech industry should be willing to come to it. Everything here — the name, the free entry, the location — is built around getting the Upper West Region its first real seat at Ghana's tech table.</p>
-    </div>
-    <div class="name-note reveal">
+        <section class="light" id="about">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="eyebrow">The theme</div>
+                    <h2>Put Wa on the map.</h2>
+                    <p>
+                        PyCon Wa is built around one idea: a region shouldn't
+                        have to move to the capital to reach the tech industry,
+                        the tech industry should be willing to come to it.
+                        Everything here, the name, the free entry, the location,
+                        is built around getting the Upper West Region its first
+                        real seat at Ghana's tech table.
+                    </p>
+                </div>
+                <!--<div class="name-note reveal">
       <span class="mark">About the name</span>
-      <p><strong>"WA" is doing double duty.</strong> It's the standard shorthand for West Africa — but it's also, simply, the name of the city we're holding this in: <strong>Wa</strong>, capital of the Upper West Region. We didn't choose the acronym to fit the city. We chose the city because the acronym already fit.</p>
-    </div>
-  </div>
-  <div class="threads" style="margin-top:56px;">
-    <div class="thread reveal">
-      <div class="thread-bar"></div>
-      <div class="thread-num">Thread 01</div>
-      <h3>Presence</h3>
-      <p>Show, in person, that there is an audience, a talent pool, and a curiosity for tech in the Upper West Region — not just a need for it.</p>
-    </div>
-    <div class="thread reveal">
-      <div class="thread-bar"></div>
-      <div class="thread-num">Thread 02</div>
-      <h3>Access</h3>
-      <p>Zero cost to attend. No entry fee should be the reason a student in Wa, Nadowli, or Jirapa misses the first tech event ever held near them.</p>
-    </div>
-    <div class="thread reveal">
-      <div class="thread-bar"></div>
-      <div class="thread-num">Thread 03</div>
-      <h3>Attention</h3>
-      <p>Give companies, sponsors, and investors from the south a concrete reason to look north — and a room full of reasons to come back.</p>
-    </div>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="dark" id="why-wa">
-  <div class="wrap">
-    <div class="why-grid">
-      <div class="reveal">
-        <div class="eyebrow">Why Wa, why now</div>
-        <h2 style="font-size:clamp(28px,3.6vw,40px); font-weight:700; margin-top:16px;">The north isn't missing a demand for tech. It's missing an invitation.</h2>
-        <p style="margin-top:20px; opacity:0.8; max-width:52ch;">Ghana's tech ecosystem — hackathons, incubators, investor visits, developer meetups — is concentrated almost entirely in Accra and Kumasi. The Upper West Region sits at the far end of that map: under-visited, under-funded, and rarely mentioned when people talk about "Ghana's tech scene," despite a growing base of students and self-taught developers with no local event to bring them together. PyCon WA doesn't ask the region to travel south to be seen. It starts the conversation here.</p>
-        <div class="stat-row">
-          <div class="stat"><div class="num">1st</div><div class="lbl">Tech conference held in the Upper West Region</div></div>
-          <div class="stat"><div class="num">Free</div><div class="lbl">Entry, meals, and materials for every attendee</div></div>
-          <div class="stat"><div class="num">3</div><div class="lbl">Neighbouring regions &amp; countries within reach of Wa</div></div>
-          <div class="stat"><div class="num">100%</div><div class="lbl">Volunteer-organized, community first</div></div>
-        </div>
-      </div>
-      <ul class="why-list reveal">
-        <li>
-          <span class="why-tag">Geography</span>
-          <div><h4>A genuine gateway location</h4><p>Wa sits close to the Burkina Faso border and within reach of the Upper East and Northern/Savannah regions — a natural meeting point for the north, not just Ghana's edge.</p></div>
-        </li>
-        <li>
-          <span class="why-tag">Talent</span>
-          <div><h4>Students with nowhere to go</h4><p>Computer science and IT students from local schools and tertiary institutions currently have to travel to Accra or Kumasi for any conference at all. This one comes to them.</p></div>
-        </li>
-        <li>
-          <span class="why-tag">Signal</span>
-          <div><h4>A reason for companies to visit</h4><p>Sponsoring or speaking at PyCon WA is, for most tech companies, their first-ever presence in the Upper West Region — and the start of a relationship, not a one-off visit.</p></div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="light" id="program">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The program</div>
-      <h2>Two days, built for first-timers.</h2>
-      <p>Because this is many attendees' first tech event of any kind, the program leans deliberately toward hands-on and beginner-friendly sessions, alongside talks from across Ghana's wider Python community. Times are placeholders until the schedule is locked.</p>
-    </div>
-    <div class="tabs reveal">
-      <button class="tab active" data-day="day1">Day 1</button>
-      <button class="tab" data-day="day2">Day 2</button>
-    </div>
-    <div class="day active" id="day1">
-      <div class="slot"><div class="slot-time">09:00</div><div><div class="slot-title">Registration & coffee</div></div><div class="slot-track">All tracks</div></div>
-      <div class="slot"><div class="slot-time">10:00</div><div><div class="slot-title">Opening keynote — Why here, why now</div><div class="slot-desc">Framing the conference theme — TBA speaker</div></div><div class="slot-track">Main hall</div></div>
-      <div class="slot"><div class="slot-time">11:00</div><div><div class="slot-title">Python for absolute beginners</div><div class="slot-desc">A no-assumptions on-ramp, laptops provided for those without one</div></div><div class="slot-track">Beginner track</div></div>
-      <div class="slot"><div class="slot-time">13:00</div><div><div class="slot-title">Lunch & community fair</div><div class="slot-desc">Meet local schools, student groups, and visiting sponsors</div></div><div class="slot-track">Community hall</div></div>
-      <div class="slot"><div class="slot-time">14:30</div><div><div class="slot-title">Lightning talks</div><div class="slot-desc">5-minute talks, open floor</div></div><div class="slot-track">Main hall</div></div>
-      <div class="slot"><div class="slot-time">16:00</div><div><div class="slot-title">Your first line of code, together</div><div class="slot-desc">Guided hands-on workshop for total beginners</div></div><div class="slot-track">Workshop</div></div>
-    </div>
-    <div class="day" id="day2">
-      <div class="slot"><div class="slot-time">09:30</div><div><div class="slot-title">Panel: what it takes to build a tech career from the north</div><div class="slot-desc">Northern-raised developers now working across Ghana and remotely</div></div><div class="slot-track">Career & community</div></div>
-      <div class="slot"><div class="slot-time">10:30</div><div><div class="slot-title">Building for low-connectivity environments</div><div class="slot-desc">TBA speaker</div></div><div class="slot-track">Main hall</div></div>
-      <div class="slot"><div class="slot-time">12:00</div><div><div class="slot-title">Automating everyday problems with Python</div><div class="slot-desc">Practical scripting for agriculture, records, and small business</div></div><div class="slot-track">Workshop</div></div>
-      <div class="slot"><div class="slot-time">14:00</div><div><div class="slot-title">Bringing tech companies north: a call to sponsors</div><div class="slot-desc">Open session with visiting sponsors and investors</div></div><div class="slot-track">Career & community</div></div>
-      <div class="slot"><div class="slot-time">15:30</div><div><div class="slot-title">Closing keynote & what comes next</div></div><div class="slot-track">Main hall</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="dark" id="speak">
-  <div class="wrap">
-    <div class="cfp-grid">
-      <div class="reveal">
-        <div class="eyebrow">Call for proposals</div>
-        <h2 style="font-size:clamp(28px,3.6vw,40px); font-weight:700; margin-top:16px;">Bring your talk north.</h2>
-        <p style="margin-top:18px; opacity:0.8; max-width:50ch;">We're looking for two kinds of speakers: developers from Accra, Kumasi, and beyond willing to bring a talk to a new audience, and first-time speakers from the Upper West Region itself. Every submission gets written feedback from the program committee, accepted or not — and first-timers get an optional mentor to help shape the talk.</p>
-        <a href="#" class="btn btn-primary" style="margin-top:28px;">Submit a proposal →</a>
-        <ul class="track-list">
-          <li>Core Python & getting started <span style="opacity:0.5;">Track A</span></li>
-          <li>Web, APIs & backend systems <span style="opacity:0.5;">Track B</span></li>
-          <li>Data, automation & practical tools <span style="opacity:0.5;">Track C</span></li>
-          <li>Career, community & first talks <span style="opacity:0.5;">Track D</span></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="eyebrow">Key dates</div>
-        <ul class="dates" style="margin-top:20px;">
-          <li><span>CFP opens</span><span>TBA</span></li>
-          <li><span>First-time speaker mentorship window</span><span>TBA</span></li>
-          <li><span>CFP closes</span><span>TBA</span></li>
-          <li><span>Speakers notified</span><span>TBA</span></li>
-          <li><span>Schedule published</span><span>TBA</span></li>
-          <li><span>Conference dates</span><span>TBA</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="light" id="register">
-  <div class="wrap">
-    <div class="register-grid">
-      <div class="register-side reveal">
-        <div class="eyebrow">Registration</div>
-        <h2 style="font-size:clamp(28px,3.6vw,40px); font-weight:700; margin-top:16px;">Free. On purpose.</h2>
-        <p style="margin-top:18px; opacity:0.82; font-size:16px;">This is the first tech conference the Upper West Region has ever hosted, and for a lot of attendees it'll be their first conference of any kind. A price tag — even a small one — is exactly the kind of barrier that keeps events like this from reaching the people who'd benefit most. So there isn't one.</p>
-        <div class="free-line">✕ &nbsp; No entry fee, no hidden cost</div>
-        <ul>
-          <li>Full access to both days, all talks and workshops</li>
-          <li>Lunch and refreshments included</li>
-          <li>Limited transport support for attendees from outside Wa</li>
-          <li>Priority given to students and first-time conference-goers</li>
-        </ul>
-      </div>
-
-      <div class="form-card reveal">
-        <h3>Reserve your seat</h3>
-        <p class="sub">Registration is free — this just helps us plan seats, meals, and transport support accurately.</p>
-
-        <!--
-          SETUP NOTE FOR THE ORGANIZER:
-          Replace YOUR_FORM_ID below with a real Formspree (or similar) form ID.
-          1. Create a free account at formspree.io
-          2. Create a new form, copy its ID
-          3. Replace the action URL below
-          Until then, this form will show an error on submit — it needs a real endpoint.
-        -->
-        <form id="regForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-row">
-            <div class="field">
-              <label for="fullName">Full name</label>
-              <input type="text" id="fullName" name="fullName" required>
+      <p><strong>On a lighter note, "Wa" is doing double duty.</strong> It's the standard shorthand for West Africa, but it's also, simply, the name of the city we're holding this in: <strong>Wa</strong>, capital of the Upper West Region. We didn't choose the acronym to fit the city. We chose the city because the acronym already fit.</p>
+    </div>-->
             </div>
-            <div class="field">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" required>
+            <div class="threads" style="margin-top: 56px">
+                <div class="thread reveal">
+                    <div class="thread-bar"></div>
+                    <div class="thread-num">Thread 01</div>
+                    <h3>Presence</h3>
+                    <p>
+                        Show, in person, that there is an audience, a talent
+                        pool, and a curiosity for tech in the Upper West Region,
+                        not just a need for it.
+                    </p>
+                </div>
+                <div class="thread reveal">
+                    <div class="thread-bar"></div>
+                    <div class="thread-num">Thread 02</div>
+                    <h3>Access</h3>
+                    <p>
+                        Zero cost to attend. No entry fee should be the reason a
+                        student in Wa, Nadowli, or Jirapa misses the first tech
+                        event ever held near them.
+                    </p>
+                </div>
+                <div class="thread reveal">
+                    <div class="thread-bar"></div>
+                    <div class="thread-num">Thread 03</div>
+                    <h3>Attention</h3>
+                    <p>
+                        Give companies, sponsors, and investors from the south a
+                        concrete reason to look north, and a room full of
+                        reasons to come back.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Optional">
+        </section>
+
+        <div class="weave"></div>
+
+        <section class="dark" id="why-wa">
+            <div class="wrap">
+                <div class="why-grid">
+                    <div class="reveal">
+                        <div class="eyebrow">Why Wa, why now</div>
+                        <h2
+                            style="
+                                font-size: clamp(28px, 3.6vw, 40px);
+                                font-weight: 700;
+                                margin-top: 16px;
+                            "
+                        >
+                            The north isn't missing a demand for tech. It's
+                            missing an invitation.
+                        </h2>
+                        <p
+                            style="
+                                margin-top: 20px;
+                                opacity: 0.8;
+                                max-width: 52ch;
+                            "
+                        >
+                            Ghana's tech ecosystem, hackathons, incubators,
+                            investor visits, developer meetups, is concentrated
+                            almost entirely in Accra and Kumasi. The Upper West
+                            Region sits at the far end of that map:
+                            under-visited, under-funded, and rarely mentioned
+                            when people talk about "Ghana's tech scene," despite
+                            a growing base of students and self-taught
+                            developers with no local event to bring them
+                            together. PyCon Wa doesn't ask the region to travel
+                            south to be seen. It starts the conversation here.
+                        </p>
+                        <div class="stat-row">
+                            <div class="stat">
+                                <div class="num">1st</div>
+                                <div class="lbl">
+                                    Tech conference held in the Upper West
+                                    Region
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="num">Free</div>
+                                <div class="lbl">
+                                    Entry, meals, and materials for every
+                                    attendee
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="num">3</div>
+                                <div class="lbl">
+                                    Neighbouring regions &amp; countries within
+                                    reach of Wa
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="num">100%</div>
+                                <div class="lbl">
+                                    Volunteer-organized, community first
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="why-list reveal">
+                        <li>
+                            <span class="why-tag">Geography</span>
+                            <div>
+                                <h4>A genuine gateway location</h4>
+                                <p>
+                                    Wa sits close to the Burkina Faso border and
+                                    within reach of the Upper East and
+                                    Northern/Savannah regions, a natural meeting
+                                    point for the north, not just Ghana's edge.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="why-tag">Talent</span>
+                            <div>
+                                <h4>Students with nowhere to go</h4>
+                                <p>
+                                    Computer science and IT students from local
+                                    schools and tertiary institutions currently
+                                    have to travel to Accra or Kumasi for any
+                                    conference at all. This one comes to them.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="why-tag">Signal</span>
+                            <div>
+                                <h4>A reason for companies to visit</h4>
+                                <p>
+                                    Sponsoring or speaking at PyCon Wa is, for
+                                    most tech companies, their first-ever
+                                    presence in the Upper West Region, and the
+                                    start of a relationship, not a one-off
+                                    visit.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="field">
-              <label for="travelFrom">Travelling from</label>
-              <input type="text" id="travelFrom" name="travelFrom" placeholder="e.g. Wa, Jirapa, Tamale, Accra">
+        </section>
+
+        <div id="schedule-include"></div>
+
+        <div id="speakers-include"></div>
+
+        <div class="weave"></div>
+
+        <section class="light" id="register">
+            <div class="wrap">
+                <div class="register-grid">
+                    <div class="register-side reveal">
+                        <div class="eyebrow">Registration</div>
+                        <h2
+                            style="
+                                font-size: clamp(28px, 3.6vw, 40px);
+                                font-weight: 700;
+                                margin-top: 16px;
+                            "
+                        >
+                            Free. On purpose.
+                        </h2>
+                        <p
+                            style="
+                                margin-top: 18px;
+                                opacity: 0.82;
+                                font-size: 16px;
+                            "
+                        >
+                            This is the first tech conference the Upper West
+                            Region has ever hosted, and for a lot of attendees
+                            it'll be their first conference of any kind. A price
+                            tag, even a small one, is exactly the kind of
+                            barrier that keeps events like this from reaching
+                            the people who'd benefit most. So there isn't one.
+                        </p>
+                        <div class="free-line">
+                            ✕ &nbsp; No entry fee, no hidden cost
+                        </div>
+                        <ul>
+                            <li>
+                                Full access to both days, all talks and
+                                workshops
+                            </li>
+                            <li>Lunch and refreshments included</li>
+                            <li>
+                                Limited transport support for attendees from
+                                outside Wa
+                            </li>
+                            <li>
+                                Priority given to students and first-time
+                                conference-goers
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-card reveal">
+                        <h3>Reserve your seat</h3>
+                        <p class="sub">
+                            Registration is free; this just helps us plan seats,
+                            meals, and transport support accurately.
+                        </p>
+                        <form
+                            id="regForm"
+                            action="https://formspree.io/f/xbgrzzzg"
+                            method="POST"
+                        >
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="fullName">Full name</label>
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        name="fullName"
+                                        required
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email address</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="phone">Phone number</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Optional"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="travelFrom"
+                                        >Travelling from</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="travelFrom"
+                                        name="travelFrom"
+                                        placeholder="e.g. Wa, Jirapa, Tamale, Accra"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="role">I am a</label>
+                                    <select id="role" name="role" required>
+                                        <option value="">Select one</option>
+                                        <option>Student</option>
+                                        <option>Developer / engineer</option>
+                                        <option>Educator</option>
+                                        <option>
+                                            Entrepreneur / business owner
+                                        </option>
+                                        <option>Career changer</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="experience"
+                                        >Python experience</label
+                                    >
+                                    <select id="experience" name="experience">
+                                        <option value="">Select one</option>
+                                        <option>Complete beginner</option>
+                                        <option>Some experience</option>
+                                        <option>
+                                            Comfortable / professional
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row single">
+                                <div class="field">
+                                    <label for="notes"
+                                        >Anything we should know?</label
+                                    >
+                                    <textarea
+                                        id="notes"
+                                        name="notes"
+                                        placeholder="Dietary needs, accessibility needs, or questions"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="checkbox-field">
+                                <input
+                                    type="checkbox"
+                                    id="transportHelp"
+                                    name="transportHelp"
+                                />
+                                <label for="transportHelp"
+                                    >I'd like to be considered for transport
+                                    support to reach Wa.</label
+                                >
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary form-submit"
+                            >
+                                Register, free →
+                            </button>
+                            <p class="form-note">
+                                You'll get a confirmation email once your spot
+                                is reserved.
+                            </p>
+                            <div id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="role">I am a</label>
-              <select id="role" name="role" required>
-                <option value="">Select one</option>
-                <option>Student</option>
-                <option>Developer / engineer</option>
-                <option>Educator</option>
-                <option>Entrepreneur / business owner</option>
-                <option>Career changer</option>
-                <option>Other</option>
-              </select>
+        </section>
+
+        <div id="sponsors-include"></div>
+
+        <div class="weave"></div>
+
+        <section class="light" id="venue">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Venue & getting to Wa</div>
+                    <h2>All roads, and one runway, lead here.</h2>
+                </div>
             </div>
-            <div class="field">
-              <label for="experience">Python experience</label>
-              <select id="experience" name="experience">
-                <option value="">Select one</option>
-                <option>Complete beginner</option>
-                <option>Some experience</option>
-                <option>Comfortable / professional</option>
-              </select>
+            <div class="venue-grid">
+                <div class="venue-card reveal">
+                    <h3>Venue</h3>
+                    <p>
+                        A central venue in Wa, confirmed closer to the event and
+                        chosen for easy access from the main bus terminal and
+                        nearby schools. Full address and a map go here once
+                        booked.
+                    </p>
+                </div>
+                <div class="venue-card reveal">
+                    <h3>Getting here</h3>
+                    <p>
+                        Wa is reachable by long-distance bus from Accra, Kumasi,
+                        and Tamale, and by domestic flight when scheduled. Exact
+                        routes and timetables will be posted here closer to the
+                        date.
+                    </p>
+                </div>
+                <div class="venue-card reveal">
+                    <h3>Transport support</h3>
+                    <p>
+                        A limited fund covers transport for attendees traveling
+                        from districts across the Upper West Region and
+                        neighbouring areas, flag this when you register.
+                    </p>
+                </div>
+                <div class="venue-card reveal">
+                    <h3>Accessibility</h3>
+                    <p>
+                        Step-free access and a quiet room on-site. Tell us what
+                        you need in your registration and we'll plan around it.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="form-row single">
-            <div class="field">
-              <label for="notes">Anything we should know?</label>
-              <textarea id="notes" name="notes" placeholder="Dietary needs, accessibility needs, or questions"></textarea>
+        </section>
+
+        <div class="weave"></div>
+
+        <section class="dark" id="faq">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="eyebrow">FAQ</div>
+                    <h2>Good to know</h2>
+                </div>
+                <div id="faqList">
+                    <div class="faq-item reveal">
+                        <button class="faq-q">
+                            Is it really free? <span class="plus">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Yes, entry, meals, and materials are free for
+                                every attendee. This is the first tech event of
+                                its kind in the Upper West Region, and a cost
+                                barrier is exactly what we're trying to remove.
+                                The event runs entirely on sponsorship.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q">
+                            Do I need to already know Python, or coding at all?
+                            <span class="plus">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                No. The beginner track assumes no prior
+                                programming experience, and laptops will be
+                                available on-site for attendees who don't have
+                                one, just let us know when you register.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q">
+                            I'm not from Wa, can I still come, and can I get
+                            help getting there? <span class="plus">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Absolutely, attendees from anywhere are welcome,
+                                and priority for transport support goes to those
+                                travelling from districts across the Upper West
+                                Region and nearby areas. Flag it on the
+                                registration form.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q">
+                            How is a free conference funded?
+                            <span class="plus">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Entirely through sponsorship. Companies and
+                                organizations fund the venue, meals, and
+                                transport support; see the Sponsors section
+                                above for how to get involved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-q">
+                            Is there a code of conduct?
+                            <span class="plus">+</span>
+                        </button>
+                        <div class="faq-a">
+                            <p>
+                                Yes, every attendee, speaker, sponsor, and
+                                organizer agrees to it. It's linked in the
+                                footer and enforced by a named response team at
+                                the event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="checkbox-field">
-            <input type="checkbox" id="transportHelp" name="transportHelp">
-            <label for="transportHelp">I'd like to be considered for transport support to reach Wa.</label>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit">Register — free →</button>
-          <p class="form-note">You'll get a confirmation email once your spot is reserved.</p>
-          <div id="formStatus"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
-<div class="weave"></div>
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h5>Conference</h5>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#program">Program</a></li>
+                                <li><a href="#speak">Call for proposals</a></li>
+                                <li><a href="#register">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5>Community</h5>
+                            <ul>
+                                <li><a href="#">Code of conduct</a></li>
+                                <li><a href="#">Volunteer with us</a></li>
+                                <li>
+                                    <a href="#sponsors">Become a sponsor</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Site source on GitHub</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5>Elsewhere</h5>
+                            <ul>
+                                <li><a href="#">Twitter / X</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li>
+                                    <a href="mailto:hello@pyconwa.org"
+                                        >hello@pyconwa.org</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5
+                            style="
+                                font-family: var(--mono);
+                                font-size: 12px;
+                                letter-spacing: 0.08em;
+                                text-transform: uppercase;
+                                opacity: 0.6;
+                            "
+                        >
+                            Stay in the loop
+                        </h5>
+                        <p
+                            style="
+                                font-size: 14px;
+                                opacity: 0.75;
+                                margin-top: 8px;
+                            "
+                        >
+                            One email when the CFP opens and when the schedule
+                            is confirmed. Nothing else.
+                        </p>
+                        <form id="newsletterForm">
+                            <input
+                                type="email"
+                                placeholder="you@example.com"
+                                required
+                            />
+                            <button type="submit">Notify me</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span
+                        >PyCon WA, organized independently by community
+                        volunteers in Wa, Upper West Region. Not an official PSF
+                        or Python Software Foundation site.</span
+                    >
+                    <span>Free to attend · Wa, Ghana</span>
+                </div>
+            </div>
+        </footer>
 
-<section class="dark" id="sponsors">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Sponsors</div>
-      <h2>Free for attendees, funded by you.</h2>
-      <p>Because there's no ticket price, PyCon WA runs entirely on sponsorship — covering the venue, meals, transport support, and materials for every attendee. Sponsoring this event is often a company's first-ever presence in the Upper West Region. A full prospectus with deliverables is available on request.</p>
-    </div>
-  </div>
-  <div class="sponsor-tiers">
-    <div class="sponsor-tier reveal"><h4>Community</h4><div class="amt">GH₵ 3,000</div><p>Logo on site & program</p></div>
-    <div class="sponsor-tier reveal"><h4>Partner</h4><div class="amt">GH₵ 8,000</div><p>+ Booth & funds 10 attendee meals</p></div>
-    <div class="sponsor-tier reveal"><h4>Patron</h4><div class="amt">GH₵ 18,000</div><p>+ Stage mention & funds transport for 15</p></div>
-    <div class="sponsor-tier reveal"><h4>Title</h4><div class="amt">Custom</div><p>Naming rights & keynote slot</p></div>
-  </div>
-  <div class="wrap" style="margin-top:32px;">
-    <a href="mailto:sponsors@pyconwa.org" class="btn btn-ghost reveal">Request the sponsorship prospectus →</a>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="light" id="venue">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Venue & getting to Wa</div>
-      <h2>All roads — and one runway — lead here.</h2>
-    </div>
-  </div>
-  <div class="venue-grid">
-    <div class="venue-card reveal">
-      <h3>Venue</h3>
-      <p>A central venue in Wa, confirmed closer to the event and chosen for easy access from the main bus terminal and nearby schools. Full address and a map go here once booked.</p>
-    </div>
-    <div class="venue-card reveal">
-      <h3>Getting here</h3>
-      <p>Wa is reachable by long-distance bus from Accra, Kumasi, and Tamale, and by domestic flight when scheduled. Exact routes and timetables will be posted here closer to the date.</p>
-    </div>
-    <div class="venue-card reveal">
-      <h3>Transport support</h3>
-      <p>A limited fund covers transport for attendees traveling from districts across the Upper West Region and neighbouring areas — flag this when you register.</p>
-    </div>
-    <div class="venue-card reveal">
-      <h3>Accessibility</h3>
-      <p>Step-free access and a quiet room on-site. Tell us what you need in your registration and we'll plan around it.</p>
-    </div>
-  </div>
-</section>
-
-<div class="weave"></div>
-
-<section class="dark" id="faq">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">FAQ</div>
-      <h2>Good to know</h2>
-    </div>
-    <div id="faqList">
-      <div class="faq-item reveal">
-        <button class="faq-q">Is it really free? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Yes — entry, meals, and materials are free for every attendee. This is the first tech event of its kind in the Upper West Region, and a cost barrier is exactly what we're trying to remove. The event runs entirely on sponsorship.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">Do I need to already know Python, or coding at all? <span class="plus">+</span></button>
-        <div class="faq-a"><p>No. The beginner track assumes no prior programming experience, and laptops will be available on-site for attendees who don't have one — just let us know when you register.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">I'm not from Wa — can I still come, and can I get help getting there? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Absolutely — attendees from anywhere are welcome, and priority for transport support goes to those travelling from districts across the Upper West Region and nearby areas. Flag it on the registration form.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">How is a free conference funded? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Entirely through sponsorship. Companies and organizations fund the venue, meals, and transport support — see the Sponsors section above for how to get involved.</p></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q">Is there a code of conduct? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Yes — every attendee, speaker, sponsor, and organizer agrees to it. It's linked in the footer and enforced by a named response team at the event.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h5>Conference</h5>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#speak">Call for proposals</a></li>
-            <li><a href="#register">Register</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Community</h5>
-          <ul>
-            <li><a href="#">Code of conduct</a></li>
-            <li><a href="#">Volunteer with us</a></li>
-            <li><a href="#sponsors">Become a sponsor</a></li>
-            <li><a href="https://github.com/" target="_blank" rel="noopener">Site source on GitHub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Elsewhere</h5>
-          <ul>
-            <li><a href="#">Twitter / X</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="mailto:hello@pyconwa.org">hello@pyconwa.org</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="newsletter">
-        <h5 style="font-family:var(--mono); font-size:12px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.6;">Stay in the loop</h5>
-        <p style="font-size:14px; opacity:0.75; margin-top:8px;">One email when the CFP opens and when the schedule is confirmed. Nothing else.</p>
-        <form id="newsletterForm">
-          <input type="email" placeholder="you@example.com" required>
-          <button type="submit">Notify me</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>PyCon WA — organized independently by community volunteers in Wa, Upper West Region. Not an official PSF or Python Software Foundation site.</span>
-      <span>Free to attend · Wa, Ghana</span>
-    </div>
-  </div>
-</footer>
-
-<script src="static/js/main.js" defer></script>
-
-</body>
+        <script src="static/js/main.js" defer></script>
+    </body>
 </html>
