@@ -37,17 +37,48 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// scroll reveal
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// registration form — AJAX submit to Formspree-style endpoint
+const regForm = document.getElementById('regForm');
+const formStatus = document.getElementById('formStatus');
+regForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const submitBtn = regForm.querySelector('.form-submit');
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  formStatus.classList.remove('show');
+  try {
+    const response = await fetch(regForm.action, {
+      method: 'POST',
+      body: new FormData(regForm),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      formStatus.textContent = "You're registered — check your email for confirmation.";
+      formStatus.style.color = '#8fd6b0';
+      regForm.reset();
+    } else {
+      throw new Error('Submission failed');
+    }
+  } catch (err) {
+    formStatus.textContent = "This form isn't connected to a live endpoint yet — see the setup note in the site source.";
+    formStatus.style.color = '#e88a78';
+  }
+  formStatus.classList.add('show');
+  submitBtn.textContent = 'Register — free →';
+  submitBtn.disabled = false;
+});
 
 // newsletter form
-const newsletterForm = document.getElementById('newsletterForm');
+const newsletterForm = document.querySelector('.newsletter form');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
     newsletterForm.querySelector('button').textContent = 'Thanks — you\'re on the list';
   });
 }
+
+// scroll reveal
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
